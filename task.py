@@ -7,7 +7,7 @@ from sqlalchemy.orm import relationship
 import app.models
 
 class Task(Base):
-    __table_name__ = 'tasks'
+    __tablename__ = 'tasks'
     __table_args__ = {'keep_existing': True}
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String)
