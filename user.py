@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship
 from app.models import *
 
 class User(Base):
-    __table_name__ = 'users'
+    __tablename__ = 'users'
     __table_args__ = {'extend_existing': True}
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String)
